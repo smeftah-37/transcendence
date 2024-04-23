@@ -1,0 +1,15 @@
+
+
+  .Container2{
+position:relative;
+background-image:url("./assets/asset.png");
+
+width: 80%;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover; /* This makes sure the background image covers the entire viewport */
+background-position: center;
+justify-self: center;
+
+  }
+

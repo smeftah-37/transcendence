@@ -1,0 +1,227 @@
+.Header-chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: rgb(226, 235, 226);
+
+    font-family: Kikia;
+
+    background-color: rgba(5, 6, 7, 0.9);
+    border-left: transparent;
+    border-right: transparent;
+
+
+}
+
+.Header-chat img {
+    text-align: left;
+    width: 50px;
+    left: 100px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    margin-top: 5px;
+}
+
+
+.Header-chat .status {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-left: 50%;
+    font-size: 1em;
+
+    color: rgb(226, 235, 226);
+    filter: drop-shadow(2px 2px 2px #edeff5) saturate(0.2);
+
+}
+
+.Input-conversation .send-bar {
+    position: relative;
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+.Input-conversation {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(10, 8, 6, 0.6);
+    min-height: 100%;
+
+}
+
+.Input-conversation .text-input {
+    width: calc(100% - 50px);
+    height: 60px;
+
+    text-align: left center;
+
+    border-radius: 20px;
+}
+
+.send-button {
+    background-color: transparent;
+    border: 0px;
+    margin-left: 5px;
+    overflow: hidden;
+
+
+
+}
+
+.send-button:hover img {
+    opacity: 1;
+    filter: drop-shadow(2px 2px 4px rgb(6, 6, 7));
+}
+
+.send-button img {
+    height: 75%;
+    width: 75%;
+
+}
+
+.Conversation {
+    display: grid;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 100%;
+    min-height: 100%;
+
+}
+
+.Conversation .container {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: row;
+    gap: 1%;
+    margin: 2% 0 0 0;
+}
+
+.Conversation .message {
+    box-sizing: border-box;
+
+    color: black;
+    opacity: 1;
+    width: 45%;
+    height: auto;
+    min-height: 1%;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Kikia';
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+
+    background-color: rgb(255, 227, 194, 0.8);
+
+    padding: calc(0.5vh + 0.5vw);
+    word-break: break-word;
+}
+
+.Conversation .container .image {
+    position: relative;
+    margin: -3% 0 0 -3%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.Conversation .message::before {
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Conversation .container .Myimage {
+    position: relative;
+    order: 1;
+    text-align: left;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+
+
+
+}
+
+.Conversation .Mymessage {
+    color: rgb(5, 4, 4);
+    width: 45%;
+    height: auto;
+    min-height: 1%;
+    order: -1;
+
+    /* Allow natural width */
+    margin: 1.5% 0% 0 55%;
+    left: calc(55%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 130%;
+    border-radius: 20px;
+    border-style: hidden;
+    border-top-right-radius: 0px;
+    background-color: rgb(255, 227, 194, 0.7);
+    font-size: 1em;
+    font-family: 'Kikia';
+    word-break: break-word;
+    padding: calc(0.5vh + 0.5vw);
+
+}
+
+.Conversation .Mymessage::before {
+    width: 40%;
+    height: 10%;
+    order: -1;
+    border-radius: 50%;
+    left: 10%;
+}
+
+.plus_info_dots {
+    position: absolute;
+
+    width: 80%;
+    color: wheat;
+    margin-left: 87%;
+    z-index: 100;
+}
+
+.Header-chat .search-bar {
+    position: absolute;
+    margin-left: 90%;
+    font-family: 'Kikia';
+    font-size: 100%;
+    color: rgb(240, 234, 234);
+
+
+}
+

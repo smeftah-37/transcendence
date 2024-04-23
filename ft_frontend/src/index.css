@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.sossi{
+  background-image: url("./ft_charachter/assets/empty.jpeg") ;
+
+    position:absolute;
+
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This ensures the background image doesn't scroll with the content */
+    background-size: cover; /* This makes sure the background image covers the entire viewport */
+    background-position: center;
+  justify-content: center;
+    overflow: hidden;
+    align-items: center;
+  }
+
+
+  .sossi h1{
+    font-size: 7.5em;
+    font-family: Kikia;
+    position:absolute;
+    text-align: center;
+    top:30vh;
+    left:20vw;
+
+
+
+  }

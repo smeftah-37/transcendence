@@ -1,0 +1,11 @@
+Model Information:
+* title:	ping pong
+* source:	https://sketchfab.com/3d-models/ping-pong-c954dcfaec2744e381a30d09afbb6e47
+* author:	alixor22 (https://sketchfab.com/alixor22)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "ping pong" (https://sketchfab.com/3d-models/ping-pong-c954dcfaec2744e381a30d09afbb6e47) by alixor22 (https://sketchfab.com/alixor22) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

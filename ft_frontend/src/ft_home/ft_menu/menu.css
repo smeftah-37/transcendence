@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'Kikia';
+    src: local('Kikia'), url(../../../fonts/kikia.ttf) format('truetype');
+  }
+
+
+
+
+
+
+
+:root{
+  --white:#fff;
+  --black:#101010;
+  --dark:#191919;
+  --gray:rgba(1,1,1,0.6);
+  --lite:rgba(255,255,255,0.6);
+  --primary:linear-gradient(145deg,#e4e9f1,#43424b);
+  --primary_dark:#0e0808;
+  --secondary:#e7ebf0;
+  --default_font:'Open Sans', sans-serif;
+  --title_font:'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 8px;
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  -webkit-box-shadow: 0px 1px 2px var(--dark);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--dark);
+}
+.nav_content{
+  background-color: #0e0d0895;
+  padding: 25px;
+
+  border-radius: 30px;
+
+
+  text-shadow: 0 1px 0 #e4e3de, 0 2px 0 #ecebe5, 0 3px 0 #7e7d7a, 0 4px 0 #9e9e9b, 0 5px 0 #b4b4b1, 0 6px 0 #bdbcb9, 0 7px 0 #c2c1bc, 0 8px 0 #e2e2df, 0 0 5px rgba(207, 200, 200, 0.973), 0 -1px 3px rgb(247, 241, 241), 0 9px 9px rgba(240, 233, 233, 0.829), 0 12px 12px rgba(179, 170, 170, 0.952), 0 15px 15px rgba(167, 162, 162, 0.836); 
+
+}
+
+
+.menu- .navbar__link{
+  text-decoration:none !important;
+  min-width: fit-content;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  cursor: url(https://cdn4.iconfinder.com/data/icons/sports-57/32/ping_pong-512.png);
+}
+
+
+.menu- .navbar__link, .menu- button{
+  transition:0.5s;
+}
+
+.menu- em{
+  font-style:normal;
+  color:var(--primary_dark);
+}
+
+.menu- figure{
+  padding:0;
+  margin:0;
+}
+
+.menu- figure img{
+  min-width:100%;
+  min-height:100%;
+  width:100%;
+  height:100%;
+}
+
+.menu- .navbar__link, .menu- p, .menu- .btn{
+  font-size:calc(1vh + 1vw);
+}
+
+.menu- p{
+  line-height:1.9em;
+  color:var(--lite);
+}
+
+.menu- .navbar__link, .menu- button, .menu- input, .menu- textarea, .menu- select{
+  outline:none !important;
+}
+
+.menu- fieldset{
+  border:0;
+}
+
+.menu- h1, .menu- h2, .menu- h3,.menu-  h4, .menu- h5, .menu- h6{
+  margin:0;
+}
+
+.menu- .title, .menu- .sub_title{
+  font-family:'Kikia'
+}
+
+.menu- .flex, .menu- .fixed_flex{
+  display:flex;
+}
+/* #nav_content
+{
+  position: relative;
+  opacity: 1;
+  transform: translateY(0%);
+  transform: translateX(40%);
+  transition: opacity 2s ease, transform 1s ease;
+}
+#nav_content.animate {
+
+  opacity: 1;
+  transform: translateY(50%);
+
+} */
+.menu- .flex_content{
+  width:100%;
+  position:relative;
+}
+
+.menu- .padding_1x{
+  padding:1rem;
+}
+
+.menu- .padding_2x{
+  padding:2rem;
+}
+
+.menu- .padding_3x{
+  padding:3rem;
+}
+
+.menu- .padding_4x{
+  padding:4rem;
+}
+
+.menu- .big{
+  font-size:5em;
+}
+
+.medium{
+  font-size:2em;
+}
+
+.small{
+  font-size:1.3em;
+}
+
+.btn{
+  padding:1rem;
+  border-radius:5px;
+  text-align:center;
+  font-weight:500;
+  text-transform:uppercase;
+  position:relative;
+  font-family:'Kikia';
+  font-weight:400;
+}
+
+.btn_1{
+  display:block;
+  background-color:0;
+  border:0;
+  text-transform:uppercase;
+  color:var(--white);
+}
+
+.btn_1:before{
+  content:"";
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.2);
+  position:absolute;
+  left:0;
+  top:50%;
+  width:50px;
+  height:50px;
+  transition:0.5s;
+  transform:translate(0%, -50%);
+}
+
+.btn_1:after{
+  content:"\f178";
+  font-family:'Kikia';
+  margin-left:5px;
+}
+
+.btn_1:hover:before{
+  border-radius:40px;
+  width:100%;
+}
+
+.divisions{
+  position:relative;
+}
+
+@media (max-width:920px){
+  .flex{
+      flex-wrap:wrap;
+  }
+  
+  .padding_1x, .padding_2x, .padding_3x, .padding_4x{
+      padding:1rem;
+  }
+  
+  .big{
+      font-size:1.8em;
+  }
+  
+  .medium{
+      font-size:1.6em;
+  }
+  
+  .small{
+      font-size:1.1em;
+  }
+  
+  .btn{
+      padding:0.5rem 1rem;
+  }
+  
+  .navbar__link, p, .btn{
+      font-size:12px;
+  }
+}
+
+
+
+
+
+/*NAV*/
+.menu- nav{
+  display:flex;
+  position:fixed;
+  top:0;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+  padding:1rem 3rem;
+  z-index:9;
+  white-space:nowrap;
+  transition:0.5s
+}   
+
+.menu- nav .navbar__link{
+  padding:0.8rem 0;
+  color:var(--lite);
+  margin:0 1.5rem;
+  text-transform:uppercase;
+  font-family:'Kikia';
+  font-weight:400;
+  position:relative;
+  white-space:nowrap;
+}
+
+
+.menu- nav .active{
+  filter: drop-shadow(2px 2px 4px rgb(12, 11, 11));
+  color:rgb(39, 36, 36) !important;
+  border-bottom:2px solid rgba(160, 154, 154, 0.5);
+  box-shadow: 10px rgb(17, 16, 16);
+  
+
+
+}
+
+.menu- nav .flex_content:nth-child(2) .navbar__link:after{
+  transition:0.5s;
+  content:"";
+  position:absolute;
+  left:0;
+  width:0;
+  top:100%;
+  height:2px;
+  background:var(--primary);
+}
+
+.menu- nav .navbar__link:hover{
+  color:var(--white);
+}
+
+.menu- nav .flex_content:nth-child(2) .navbar__link:hover:after{
+  width:100%;
+}
+
+.menu- nav .flex_content:last-child .navbar__link{
+  float:right;
+}
+
+.menu- nav .ham{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+
+
+menu{
+  margin:0;
+}
+
+menu{
+  width:400px;
+  background-color:var(--dark);
+  z-index:999;
+  position:fixed;
+  right:-400px;
+  overflow:hidden;
+  height:100%;
+  transition:0.5s;
+  padding:6rem 2rem;
+}
+
+.overlay{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  transition:0.5s;
+  opacity:0;
+  z-index:-1;
+  background-color:var(--gray);
+}
+
+.close{
+  float:right;
+  border:2px solid var(--lite);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:32px;
+  padding:0.5rem;
+  color:var(--lite);
+  position:absolute;
+  top:5%;
+  right:5%;
+}
+
+.close:hover{
+  color:var(--white);
+  border:2px solid var(--white);
+}
+
+menu li{
+  padding:0.8rem 0;
+  list-style:none;
+}
+
+menu li .navbar__link{
+  color:var(--lite);
+}   
+
+menu li i{
+  color:var(--primary_dark);
+}
+
+menu li .navbar__link:hover{
+  color:var(--white);
+}
+
+@media (max-width:920px){
+  .menu- nav{
+      padding:1rem;
+  }
+  
+  .menu- nav .ham{
+      width:30px;
+      height:30px;
+  }
+  
+  .menu- nav .nav_content{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+      width:200px;
+      background-color:var(--dark);
+      z-index:999 !important;
+      position:fixed;
+      top:0;
+      right:-300px;
+      overflow:hidden;
+      height:100%;
+      transition:0.5s;
+  }
+  
+  .menu- nav .nav_content .navbar__link{
+      display:block;
+      padding:0.4rem 0rem;
+      margin:1rem;
+      font-size:20px;
+  }
+}
+
+
+
+
+
+/*ADDITIONAL*/
+/*Custom cursor*/
+
+
+
+
+
+
+
+
+
+
+@media (max-width:920px){
+  .division_1 {
+    padding:0;
+  }
+}
+
+
+
+
+
+/*Transparent text background*/
+.stroke{
+  color:transparent;
+  -webkit-text-stroke: 1.5px var(--primary_dark);
+}
+
+
+
+
+/*Scroller*/
+.cs-down{
+  position: absolute;
+  height: 35px;
+  width: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--white);
+  bottom: 10%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.cs-down:before{
+  content: '';
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  -webkit-animation: UpAndDown 3s infinite;
+  animation: UpAndDown 3s infinite;
+}
+
+@-webkit-keyframes UpAndDown {
+  0%,
+  100% {
+    top: 30%;
+  }
+  50% {
+    top: 70%;
+    opacity: 0.5;
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+@keyframes UpAndDown {
+  0%,
+  100% {
+    top: 30%;
+  }
+  50% {
+    top: 70%;
+    opacity: 0.5;
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+
+/* .nav__light {
+  position: absolute;
+  top: 0;
+  left: 1.3em;
+  background-color: var(--white-color);
+  width: 4em;
+  height: .4em;
+  border-radius: 2px;
+  
+  display: flex;
+  justify-content: center;
+  
+  transition: .3s ease;
+} */
+.loginho {
+  width:10vw;
+  height:15vh;
+  margin: 0 0 0 20%;
+}
+.nav__light {
+  
+  width: 3em;
+  height: 1em;
+  position: absolute;
+  
+}
+
+.menu- nav{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  
+}
+@media (min-width:920px){
+  .menu- nav .ham{
+    display:none;
+    
+  }
+  .menu- nav{
+    right:0px;
+  }
+  
+}
+
+
+
+
+.ham img{
+width: 50px;
+height: 50px;
+margin : 0 0 0 -14vw;
+}

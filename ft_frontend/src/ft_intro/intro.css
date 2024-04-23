@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Kikia';
+    src: local('Kikia'), url(../../fonts/kikia.ttf) format('truetype');
+  }
+    
+.Index {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    font-family: 'Kikia';
+    background-image: url("./assets/1.jpg");
+    background-size:cover;
+    opacity: 0.8;
+    overflow: hidden;
+    animation:  hideln 4s ease 1s forwards;
+}
+
+.Marvel
+{
+
+    width: 100%;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+    letter-spacing: -2vh;
+    opacity: 0;
+    animation: Marvel 3s linear 2s forwards;}
+
+@keyframes Marvel {
+    0% {
+        opacity: 0;
+        font-size: 100vh;
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke-color: #000;
+
+    }
+    20% {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke-color: #000;
+
+    }
+    60% {
+        color: rgba(255, 255, 255, 0.5);
+        -webkit-text-stroke-color: #000;
+
+    }
+    100% {
+        opacity: 1;
+        font-size: 15vh;
+        color: rgb(93, 144, 233);
+        -webkit-text-stroke-color: transparent;
+
+    }
+}
+.introh1{
+    position: relative;
+    font-size:15vh;
+    width: 100%;
+    margin: 0 0 0 15%;
+    letter-spacing: 1px;
+    
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    background-image: url(assets/1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    animation: hideBg 3s linear  forwards;
+}
+
+@keyframes hideln {
+    0% {
+        background-size: cover;
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        font-family: 'Kikia';
+        overflow: hidden;
+    }
+    60% {
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        background-size: cover;
+        font-family: 'Kikia';
+        overflow: hidden;
+    }
+    90% 
+    {
+        background-size: cover;
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        font-family: 'Kikia';
+        overflow: hidden;
+
+    }
+    100% 
+    {
+        background-size: cover;
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        font-family: 'Kikia';
+        overflow: hidden;
+
+    }
+}
+
+@keyframes hideBg {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+        
+    }
+    100% {
+
+        opacity: 0;
+    }
+}
+
+
+
+.Index {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 2fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Marvel"
+      "Article"
+      "about";
+
+  }
+  
+  .Article {  
+    display: grid;
+    grid-template-columns: 0.3fr 2.3fr 0.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . .";
+    grid-area: Article;
+    animation: hidecontent 3s linear  forwards;
+
+  }
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 75%;
+    color: rgb(32, 31, 31);
+    margin: 5% 0% 0% 45%;
+    animation: hidecontent 5s linear forwards;
+    border-radius: 10px;
+    line-height: 2;
+    font-weight: bold; 
+    text-align: center;
+    padding: 2.5%;
+    font-size: 5vh;
+    
+  }
+
+  .about {
+    position:relative;
+     grid-area: about; 
+   
+     display: flex;
+     flex-direction: row; 
+     
+     animation: hidecontent 5s linear  forwards;
+
+
+    }
+    a:visited
+    {
+        color: rgb(93, 144, 233);
+        text-decoration: none;
+    }
+
+
+
+  .Marvel
+  {
+
+     grid-area: Marvel; 
+    }
+
+    
+    .btn-linkedin {
+        background:  #0e76a8 ;
+        border-radius: 0;
+        color: #fff;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #084461;
+        animation:  hideln 5.5s ease 1s forwards;
+      }
+      .btn-linkedin:link, .btn-linkedin:visited {
+        color: #fff;
+        animation:  hideln 5.5s ease 1s forwards;
+      }
+      .btn-linkedin:active, .btn-linkedin:hover {
+        background: #084461;
+        color: #fff;
+        animation:  hideln 5.5s ease 1s forwards; 
+      }
+
+      @keyframes hidecontent {
+        0% {
+            visibility: hidden;
+        }
+        60% {
+            visibility: hidden;
+            
+        }
+        100% {
+    
+            visibility:visible
+        }
+    }
+    
+
+    .btn1, .myButton1, .myButton1::before {
+      border: 2px solid #e2d0a8;
+      border-radius: 8px;
+      cursor: pointer;
+      /* animation: hideaboutus 16s linear  forwards; */
+    }
+    .myButton1 {
+     
+      background: rgba(93, 144, 233,0.5);
+      color: #634c17;
+      font-family: 'Kikia';
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      position: absolute;
+      transform: skewX(20deg);
+      z-index: 100;
+      margin-top: 20%;
+      margin-left: -10%;
+      width: 25%;
+      height: 25%;
+      animation: hideaboutus 20s linear  forwards !important;
+
+    }
+    .myButton1::before { 
+      font-size: 20px;
+      width: 100%;
+      height: 100%;
+      content: attr(data-label);
+      background: rgba(93, 144, 233,0.5);
+      display: grid;
+      place-items: center;
+      position:absolute;
+      top: -1rem;
+      left: 1rem;
+      z-index: 100;
+      animation: hideaboutus 20s linear  forwards !important;;
+      transition: all 0.5s ease;
+    }
+    .myButton1:hover::before {
+      top: -2px;
+      left: -2px;
+      animation: hideaboutus 20s linear  forwards;
+
+    }
+    .myButton1:focus {
+      outline: none;
+
+    }
+    
+    .aboutus{
+      position: relative;
+      display :flex;
+      flex-direction: row;
+      margin-bottom: 8%;
+      justify-content: space-around;
+      z-index: 100;
+      animation: hideaboutus 6s linear  forwards;
+
+    }
+
+    @keyframes hideaboutus {
+      0% {
+          opacity: 0;
+      }
+
+
+      100% {
+  
+        opacity: 1;
+      }
+  }
+
+  

@@ -1,0 +1,190 @@
+
+
+.scoreboard {
+
+display:flex;
+flex-direction: row;
+width:300px;;
+height : 100%;
+margin: 0 0 0 calc(50% - 150px);
+-webkit-animation: showScoreboard 2s cubic-bezier(.55,0,.1,1) forwards;
+  animation: showScoreboard 2s cubic-bezier(.55,0,.1,1) forwards;
+-webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  
+.team{
+position: relative;
+width: 102px;
+height: 38px;
+background-color:  #34003a50;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+    justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+    align-items: center;
+overflow: hidden;
+.color{
+position: absolute;
+width: 6px;
+height: 100%;
+top: 0;
+}
+.name{
+color: #fff;
+font-size: 1.6em;
+top: -1px;
+position: relative;
+}
+
+&.home{
+.color{
+left: 0;
+background-color: #C8102E;
+}
+}
+
+&.away{
+.color{
+right: 0;
+background-color: #1B449C;
+}
+}
+}
+
+
+
+.goals{
+width: 102px;
+height: 38px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+    align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+    justify-content: center;
+background-color: #8c40ca50;
+color:  #f5f3f5;
+font-size: 1.6em;
+font-weight: 700;
+z-index: 2;
+.goal,
+.divider{
+position: relative;
+top: -1px;
+}
+.divider{
+margin: 0 2px;
+display: inline-block;
+position: relative;
+top: -2px;
+}
+}
+.time img {
+  position:absolute;
+  width:30px;
+  height:30px;
+  left:1vw;
+
+
+}
+.time{
+position: absolute;
+background-color: #ffffff95;
+width: 400px;
+height: 35px;
+border-radius: 20px;
+top: 38px;
+left: 50%;
+-webkit-transform: translate(-50%, 0);
+-ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+    justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+    align-items: center;
+font-size: 1.4em;
+color:  #34003a;
+font-weight: 700;
+z-index: 2;
+}
+.extra-time{
+
+width: 102px / 2;
+left: calc(50% + 102px - 26px);
+z-index: 1;
+opacity: 0;
+-webkit-animation: showExtratime 1.2s cubic-bezier(.55,0,.1,1) forwards;
+    animation: showExtratime 1.2s cubic-bezier(.55,0,.1,1) forwards;
+-webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+}
+@-webkit-keyframes showScoreboard{
+from{
+visibility: hidden;
+opacity: 0;
+-webkit-transform: translateY(-4em);
+      transform: translateY(-4em);
+}
+to{
+visibility: visible;
+opacity: 1;
+-webkit-transform: translateY(0);
+      transform: translateY(0);
+}
+}
+@-webkit-keyframes showExtratime{
+from{
+visibility: hidden;
+opacity: 0;
+-webkit-transform: translateX(102px);
+      transform: translateX(102px);
+}
+to{
+visibility: visible;
+opacity: 1;
+-webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+}
+@keyframes showScoreboard{
+from{
+visibility: hidden;
+opacity: 0;
+-webkit-transform: translateY(-4em);
+      transform: translateY(-4em);
+}
+to{
+visibility: visible;
+opacity: 1;
+-webkit-transform: translateY(0);
+      transform: translateY(0);
+}
+}
+@keyframes showExtratime{
+from{
+visibility: hidden;
+opacity: 0;
+-webkit-transform: translateX(102px);
+  transform: translateX(102px);
+}
+to{
+visibility: visible;
+opacity: 1;
+-webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+}
+}
+

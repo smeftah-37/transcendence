@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Kikia';
+    src: local('Kikia'), url(../../fonts/kikia.ttf) format('truetype');
+  }
+
+  
+
+.Home{ 
+     display: grid;
+     flex-wrap: wrap;
+    grid-template-columns: 0.1fr 4.6fr 0.1fr;
+    grid-template-rows: 0.5fr 2.3fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Header ."
+      ". All ."
+      ". Footer .";
+      background-image: url("./assets/salle.png");
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* This ensures the background image doesn't scroll with the content */
+      background-size: cover; /* This makes sure the background image covers the entire viewport */
+      background-position: center;
+      position:absolute;
+      overflow: hidden;
+      /* Additional background styles */
+   
+  }
+  
+
+  .Profile {  
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ProfileBis ChatBar";
+    grid-area: All;
+  }
+  .Container2{  
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Aboutus";
+    grid-area: All;
+  }
+
+  .Container3{  
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "settings";
+    grid-area: All;
+  }
+
+  .Chat {  
+    grid-template-areas:
+    "sidebar Allchat";
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: All;
+  }
+  
+  .header { 
+    position: absolute;
+    grid-template-areas:
+    "logo menu";
+    display: grid;
+    grid-template-columns: 0.1fr 1.9fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-area: Header;
+}
+.menu-{
+  grid-area: menu;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+.logo{
+  grid-area: logo;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+  
+
+  .Footer { grid-area: Footer;}
+  
+
+
+  .notification {
+    display:flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 16px;
+    border: 1px solid white;
+    box-shadow: 0 0 40px 6px rgb(247, 246, 244), 0 0 100px 20px rgb(245, 245, 243);
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index:1500;
+    transform: translateY(200%);
+    animation: noti 4s forwards  ease-in;
+   
+  }
+  @keyframes noti{
+    50%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  .notification img{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+  }
+
+  .notification-title{
+    font-size: 18px;
+    font-family: Kikia;
+  }
+
+  .notification-header{
+    display: flex;
+    flex-direction: row;
+    gap:3%;
+  }
+
+  .notification-text{
+    position:relative;
+    margin:0 0 0 0%;
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+  .notification-timer{
+    position:relative;
+    font-size: 1rem;
+    margin:0 0 0 50%;
+  }

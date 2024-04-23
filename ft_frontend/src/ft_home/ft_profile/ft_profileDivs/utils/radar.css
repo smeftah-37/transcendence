@@ -1,0 +1,16 @@
+.Radar
+{
+    position:relative;
+    width: 30%;
+    height: 80%;
+    margin: 0% 0 0 5%;
+}
+
+
+.Radar .Chart
+{
+
+    width: 100%;
+    height: 100%;
+    margin: 5% 0% 0 0%;
+}

@@ -1,0 +1,131 @@
+
+  @keyframes background-move {
+    0% {
+      background-position: 0 0, 0 0;
+    }
+    100% {
+      background-position: 100vw 0, 0 0;
+      background-position: max(100vw, 40em) 0, 0 0;
+    }
+  }
+
+  .listfriend{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .Userfriend{
+    position:relative;
+    height : 10%;
+    display: flex;
+    width:90%;
+    height: 9%;
+    padding:1%;
+   
+    border-radius: 10px;
+    margin: 1% 0% 5% 4.5%;
+    transition: 0.5s;
+    overflow: hidden;
+    background:#0e0c0c80;
+    color: white;
+
+  }
+
+  .FrContent
+  {
+    font-family: 'Kikia';
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .FrContent p
+  {
+    font-size: 15px;
+    margin-left: 5%;
+  }
+  .FrContent img{
+    margin-top: 10%;
+    margin-left: 12%;
+    width:25px;
+    height: 25px;
+  }
+ 
+  .com1 .th1 img {
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 40% 5% 5% 10%;
+   
+    object-fit: cover;
+    scale: 1.2;
+  }
+
+
+  .listfriend:hover .Userfriend{
+    box-shadow: -10px 20px 35px rgba(0,0,0,0.15);
+    transform: scale(1.15);
+    filter: blur(5px);
+    opacity:0.7;
+  }
+
+  .listfriend .Userfriend:hover{
+    filter: blur(0px);
+    opacity:1;
+  }
+  .input-group {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    z-index: 2;
+
+  }
+  @supports (mix-blend-mode: darken) {
+    .input-group {
+      position: relative;
+    width: 100%;
+
+
+    }
+    .input-group__label {
+
+      position: absolute;
+      margin: -10% 0% 0% 5%;
+    }
+  }
+
+  .input-group__input {
+    color: white;
+    width: 100%;
+
+    font-size: 1rem;
+    margin: 0 0 0 0;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#eeeaea, #f7ecec), linear-gradient(120deg, rgb(252, 252, 249) 0%, rgb(17, 19, 20) 50%, rgb(87, 59, 8) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    transition: background-position 0.8s ease-out;
+  }
+  .input-group__input:hover {
+    background-position: 100% 0;
+  }
+  .input-group__input:focus {
+    outline: 2px dashed #532507;
+    outline-offset: 0.5em;
+  }
+  @media (max-width:920px){
+    .FrContent ,.progress
+    {
+      display: none;
+    }
+
+  }

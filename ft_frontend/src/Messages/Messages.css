@@ -1,0 +1,292 @@
+.div-class1{
+    position: relative;
+    margin: 0 0 0 0%;
+    width: 100%;
+    height:100%;
+    background-color: rgba(29, 28, 26, 0.8);
+    box-shadow: 0px 0px 2px gray;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+    /* z-index: -5; */
+}
+
+.Element-class img{
+    text-align: left;
+    width: 50px; 
+    left:100px;
+    height: 50px; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+}
+.Element-class{
+    display:flex;
+    flex-direction:rows;
+    max-width: 90%;
+    gap:2.5%;
+
+
+    
+}
+/* .Element-class .filaha
+{
+    display:flex;
+    flex-direction:column;
+    margin: -4% 0 0 0;
+    max-width: 50%;
+    width:60%;
+
+
+} */
+.Element-class .name-class{
+    font-family: 'Kikia';
+
+    color: rgb(24, 18, 18);
+    margin-left: 1px;
+    filter: drop-shadow(2px 2px 2px #0a0b0e) saturate(1);
+
+}
+
+.Element-class .mesg{
+    position: relative;
+    color: rgba(3, 3, 10,0.7);
+    white-space: nowrap;
+    font-size:small;
+
+
+
+}
+.div-class1 .Appearmsg .AddNewElement{
+    text-decoration: none;
+    list-style: none;
+}
+.div-class1 ul {
+    margin-left: 0;
+    padding-left: 0; /* Optionally reset padding if needed */
+  }
+.div-class1 .Appearmsg .Element-class 
+{
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    display: flex;
+    left: 5%;
+    width: 90%;
+    height: 70px;
+    border-radius:20px;
+    background-color:bisque;
+    padding: 0px;
+    text-align: center;
+    max-width:90%;     
+
+}
+.title-chat
+{
+    width:100%;
+
+    height:10%;
+    text-align: center;
+    align-items: center center;
+    justify-content: center center;
+}
+.title-chat .searchedUsers
+{
+    position: relative;
+    width: 75%;
+    margin: 0 0 0 10%;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(164, 167, 180,0.5);
+    z-index: 10;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#eeeaea, #f7ecec), linear-gradient(120deg, rgb(252, 252, 249) 0%, rgb(9, 10, 10) 50%, rgb(87, 59, 8) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    transition: background-position 0.8s ease-out;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+.title-chat .searchedUsers ul
+{
+    position: relative;
+    background-color: #050505;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+.title-chat .searchedUsers li
+{
+    color: black;
+    font-family: kikia;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 0 1% 0 ;
+    list-style: none;
+    height: 60px;
+    border-radius:20px;
+}
+.title-chat .searchedUsers li:hover{
+    background-color: rgba(164, 167, 180,0.8);
+}
+
+.title-chat .searchedUsers li p
+{
+    color: black;
+    filter: drop-shadow(2px 2px 2px #0a0b0e) saturate(1);
+
+}
+.title-chat .searchedUsers li img
+{
+    text-align: left;
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* .title-chat input{
+    position:relative;
+    margin: 4% 0 0 0;
+    height:70%;
+    width: 85%;
+
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: rgb(241, 239, 239);
+    padding-left: 35px;
+    font-size: 18px;
+    color:white;
+
+
+} */
+
+
+.title-chat input {
+    position:relative;
+    margin: 3% 2% 0 0;
+    height:30%;
+    width: 80%;
+    
+
+  }
+
+
+  .title-chat input {
+    color: #050505;
+    font-size: 1rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#eeeaea, #f7ecec), linear-gradient(120deg, rgb(252, 252, 249) 0%, rgb(10, 13, 15) 50%, rgb(87, 59, 8) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    transition: background-position 0.8s ease-out;
+  }
+  .title-chat input:hover {
+    background-position: 100% 0;
+  }
+  .title-chat input:focus {
+    outline: 2px dashed #532507;
+    outline-offset: 0.5em;
+  }
+.div-class1 .Appearmsg .Element-class:hover
+
+{
+    z-index: 10;
+    cursor:pointer;
+    transition: all 0.4s ease;
+
+}
+.Element-class .date 
+{
+    position: absolute;
+    font-size: 0.7em;
+    margin: 0 0 0 68%;
+
+    white-space: nowrap;
+
+    color: rgb(16, 70, 179);
+
+}
+@media (max-width:920px){
+    .div-class1 .Element-class .mesg, .div-class1 .Element-class .date
+    {
+        display: none;
+    }
+    .div-class1 .Appearmsg .Element-class 
+    {
+        background-color: transparent;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 20% 0;
+        align-items: center;
+    }
+    .div-class1 .Appearmsg .Element-class .name-class
+    {
+    
+      
+        margin: 0 0 15% 0;
+        color: #bbabab;
+
+  
+    }
+    .title-chat input {
+        position:relative;
+        margin: 3% 2% 0 0;
+        height:5%;
+        width: 20%;
+    
+    
+      }
+    
+    
+      .title-chat input {
+        color: #050505;
+        font-size: 1rem;
+        line-height: 1;
+        border-style: none;
+        outline: none;
+        padding: 0.8em 1em;
+        border: 0.15em solid transparent;
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        border-radius: 1.8em;
+
+      }
+      .title-chat input:hover {
+        background-position: 100% 0;
+      }
+      .title-chat input:focus {
+        outline: 0.5px dashed #532507;
+        outline-offset: 0.1em;
+      }
+      .title-chat .searchedUsers li p
+        {
+            display: none;
+        }
+        .title-chat .searchedUsers li
+        {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 20% 0;
+            align-items: center;
+        font-size: 0.8rem;
+
+
+            
+        }
+     
+}

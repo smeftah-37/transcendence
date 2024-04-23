@@ -1,0 +1,344 @@
+@font-face {
+  font-family: "KIKIA";
+  src: local('KIKIA'), url(./dalek_pinpoint/DalekPinpointBold.ttf) format('truetype');
+}
+
+.Chat {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+
+}
+
+
+
+.sidebar {
+
+  position: relative;
+  display: grid;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  
+  background-color:hsla(33, 100%, 88%,0.9);
+  height: 60%;
+  top:20%;
+  width: 100%;
+  text-align: center;
+  min-width: 4.5em;
+
+
+  /* Adjust to 'contain' or '100% auto' based on your preference */
+  transition: all 0.5s ease;
+}
+
+@media (min-width:920px){
+
+  
+.sidebar {
+  grid-area: sidebar;
+  overflow: hidden;
+
+
+}
+
+
+}
+
+.ProfileIcon img {
+  position: relative;
+  width: 50%;
+  height: 15%;
+  scale: 1.5;
+  border-radius: 50%;
+  margin: 30% 0 10% 0;
+  filter: drop-shadow(2px 2px 4px rgb(2, 2, 2));
+ object-fit: fill;
+}
+
+.fourItems img {
+  position: relative;
+  width: 80%;
+ 
+  height: 80%;
+  filter: drop-shadow(2px 2px 4px rgb(2, 2, 2));
+
+}
+
+.sidebar .ProfileIcon {
+  margin-bottom: 2%;
+
+}
+
+.fourItems {
+  margin: -100% 0% 0% 0%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+
+}
+.sidebar .active{
+  filter: drop-shadow(2px 2px 4px rgb(240, 237, 237));
+  color:var(--primary_dark) !important;
+  border-left:2px solid var(--primary_dark);
+  box-shadow: 10px rgb(3, 3, 3);
+  background-color: rgba(29, 28, 26, 0.6);;
+  
+
+
+}
+.Allchat .in{
+  position: absolute;
+  color: rgba(245, 222, 179, 0.795);
+  filter: drop-shadow(2px 2px 4px rgb(2, 2, 2));
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  font-family: Kikia;
+  height: 100%;
+  margin-top: 19vh;
+  align-items: center;
+
+}
+.Allchat .in img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.Allchat {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "msgContainer Element-chat";
+  grid-area: Allchat;
+  overflow: hidden;
+  text-decoration: none;
+  list-style: none;
+}
+
+.Message-chat {
+  grid-area: msgContainer;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  list-style: none;
+
+  height: 100%;
+}
+.User-notification {
+  grid-area: msgContainer / span 2;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  list-style: none;
+  height: 100%;
+}
+.Room-chat {
+  grid-area: msgContainer;
+  position: relative;
+  width: 100%;
+  list-style: none;
+
+  text-decoration: none;
+  height: 100%;
+}
+
+.Element-chat {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 0.1fr 1.9fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  list-style: none;
+
+  grid-template-areas:
+    "Header-chat InfoMsg"
+    "Input-conversation InfoMsg";
+  grid-area: Element-chat;
+
+}
+
+
+
+.Element-chat {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  min-height: 100%;
+
+
+
+}
+
+.Header-chat {
+  background-color: aqua;
+  display: grid;
+
+  grid-area: Header-chat;
+}
+
+.MsgInfo {
+  display: grid;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-area: InfoMsg;
+}
+
+.Input-conversation {
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.9fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Conversation"
+    "send-bar";
+  grid-area: Input-conversation;
+
+
+
+}
+
+.Input-conversation {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+
+
+
+}
+
+.send-bar {
+  grid-area: send-bar;
+  display: grid;
+
+  position: relative;
+  width: 100%;
+
+  height: 100%;
+}
+
+.Conversation {
+  display: grid;
+  grid-area: Conversation;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width:920px){
+  .Chat {  
+    grid-template-areas:
+    "Allchat"
+    "sidebar";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.9fr 0.2fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: All;
+  }
+  .Allchat {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.225fr 1.725fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "msgContainer Element-chat";
+    grid-area: Allchat;
+    overflow: hidden;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  
+  .sidebar 
+  {
+
+    position: relative;
+    flex-wrap: nowrap;
+    left:20%;
+    width : 60%;
+    height : 100%;
+    top: 0%;
+    border-top-left-radius:  0px;
+    border-bottom-right-radius:  10px;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+
+  }
+  
+  .ProfileIcon img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    scale: 1;
+    margin: 15% 0% 0 20%;
+    filter: drop-shadow(2px 2px 4px rgb(2, 2, 2));
+
+  
+  }
+  .sidebar .active{
+    filter: drop-shadow(2px 2px 4px rgb(240, 237, 237));
+    color:var(--primary_dark) !important;
+    border-bottom:2px solid var(--primary_dark);
+    box-shadow: 10px rgb(3, 3, 3);
+    border-left:none;
+
+    background-color: rgba(29, 28, 26, 0.6);;
+    
+  
+  
+  }
+  .fourItems img {
+    display : flex;
+    position: relative;
+    width: 90%;
+
+    height: 90%;
+    
+    filter: drop-shadow(2px 2px 4px rgb(2, 2, 2));
+
+  }
+  
+  .sidebar .ProfileIcon {
+    margin-bottom: 0%;
+  
+  }
+  
+  .fourItems {
+
+    width : 70%;
+
+    margin: 0% 0% 0% 10%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+  }
+
+
+}

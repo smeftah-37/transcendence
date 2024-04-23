@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Kikia';
+  src: local('Kikia'), url(../../fonts/kikia.ttf) format('truetype');
+}
+
+.Allauth {  
+  position: absolute;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Place";
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.Place {
+
+  grid-area: Place;
+  z-index : 100;
+  display:grid;
+  top: 0;
+  z-index: -2;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Place video {
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -2;}
+
+
+
+
+  :root {
+    --clr-neon: #060708;
+    --font-size: 10rem;
+  }
+
+  .neon {
+    z-index: 1000;
+    position: absolute;
+    font-size: calc(0.4vw + 1vh);    
+    color: rgb(10, 10, 10);
+    top: 72%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering trick */
+    width: 12vw; /* Adjust width based on viewport width */
+    height: 7.5vh; /* Adjust height based on viewport height */
+    cursor: pointer;
+    font-family: 'Kikia';
+    border: var(--clr-neon) 0.120em solid;
+    place-items: center;
+    border-radius: 0.2em;
+    text-shadow: 0 0 .20em #FFF7, 0 0 .20em var(--clr-neon);
+    box-shadow: inset 0 0 .5em var(--clr-neon), 0 0 .5em var(--clr-neon);
+}
+
+.neon::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-neon);
+    color: white;
+    transform: perspective(0.2em) rotateX(10deg) scale(1.3, 0.40);
+    filter: blur(0.5em);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 100ms linear;
+}
+
+.neon::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-neon);
+    box-shadow: 0 0 5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+    color: rgb(243, 237, 237);
+}
+
+.Neo {
+    grid-area: Neo;
+    z-index: 0;
+
+    background-color: #060708;
+
+}
+
+.neon:hover::after {
+    z-index: 1;
+    color: rgb(243, 237, 237);
+}
+
+.neon:hover,
+.neon:focus {
+    z-index: 1;
+    color: rgb(243, 237, 237);
+    background-color: black;
+    border-color: aliceblue;
+
+}
+
+.neon:hover::before {
+    z-index: 1;
+    opacity: 0.8;
+    color: rgb(243, 237, 237);
+}
+
+._sun {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+ 
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 0 40px 6px rgb(245, 241, 220), 0 0 1500px 75px rgb(234, 235, 215);
+  animation: _rise 0.710s linear forwards;
+
+}
+@keyframes _rise {
+  0% {
+    top: 50%;
+    filter: brightness(1.1);
+  }
+  20% {
+    background: linear-gradient(rgb(236, 236, 229), rgb(238, 238, 234));
+    box-shadow: 0 0 100px 20px rgb(240, 240, 239), 0 0 1500px 450px rgb(221, 221, 219);
+    filter: brightness(2);
+
+    
+    }
+    40% {
+      background: linear-gradient(rgb(238, 238, 234), rgb(221, 221, 219));        box-shadow: 0 0 200px 40px  rgb(221, 221, 219), 0 0 1500px 650px  rgb(221, 221, 219);
+
+      filter: brightness(3);
+    }
+    60% {
+      background: linear-gradient rgb(221, 221, 219), rgb(221, 221, 219);        box-shadow: 0 0 400px 80px  rgb(221, 221, 219), 0 0 1500px 800px  rgb(221, 221, 219);
+      filter: brightness(4);
+    }
+   80% {
+    background: linear-gradient(rgb(250, 250, 193), rgb(248, 245, 197));      box-shadow: 0 0 800px 160px  rgb(221, 221, 219), 0 0 1800px 1850px rgb(250, 250, 193);
+
+    filter: brightness(8);
+    }
+  100% {
+    filter: brightness(12);
+    background: linear-gradient(rgb(252, 252, 225), rgb(252, 251, 237));      box-shadow: 0 0 1600px 320px rgb(252, 252, 225), 0 0 2000px 2000px rgb(252, 252, 225);
+  }
+}

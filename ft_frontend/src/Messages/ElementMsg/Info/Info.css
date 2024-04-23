@@ -1,0 +1,467 @@
+/* @font-face {
+  font-family: "KIKIA";
+  src: local('KIKIA'), url(./dalek_pinpoint/DalekPinpointBold.ttf) format('truetype');
+} */
+
+.Info-class
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.Info-class .user-infoP{
+  position: relative;
+  width: 100%;
+
+  margin: 5% 0 10% 30%;
+
+}
+.Info-class .user-infoP img{
+  position: relative;
+  margin: 0 0 0 0%;
+  width: 30%;
+  height: 60%;
+  border-radius: 50%;
+  margin: 0% 0 0% 2%;
+
+
+}
+.Info-class .user-infoP h2{
+  font-family: Kikia;
+  color: rgb(5, 10, 20);
+  margin: 6% 0 0% 9%;
+
+}
+.Info-class .profile
+{
+  position: relative;
+  width: 100%;
+
+  margin: 5% 0 10% 40%;
+
+}
+ .Info-class .passwordSettings{
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 10%;
+
+}
+
+.Info-class .passwordSettings button {
+  width: 80%;
+  border-radius: 15px;
+  margin: 1% 0 0 0;
+  display: flex;
+  color: white;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: fill;
+  background-color: rgba(6, 7, 8, 0.8);
+
+
+}
+
+
+.Info-class .profile #uploadbtn
+{
+  background-color: rgba(17, 18, 20, 0.5);;
+
+}
+.Info-class .profile .user-image
+{
+  margin: 0% 0 0% 2%;
+
+  border: 3px solid rgba(4, 6, 10, 0.9);
+  filter: drop-shadow(2px 2px 4px rgb(252, 250, 250));
+
+
+}
+.Info-class .other-options{
+  margin: 50% 0 0 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Info-class .other-options button , .Info-class .friend-infos
+{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  
+}
+.Info-class .other-options button , .Info-class .friend-infos button{
+  width: 80%;
+  border-radius: 15px;
+  margin: 3% 0 0 10%;
+  display: flex;
+  color: white;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: fill;
+  background-color: rgba(10, 12, 15, 0.8);
+
+
+}
+.Info-class .other-options button .fav, .Info-class .friend-infos button .fav{
+  position: absolute;
+  margin: 0 0 0 -65%;
+  font-size: 20px;
+}
+.Info-class .other-options button h2, .Info-class .friend-infos button h2
+{
+  font-size: 1.3em;
+  position: relative;
+}
+.Info-class .Membres
+{
+  position: relative;
+  color: #000;
+  border-radius: 10px;
+  font-size: large;
+  width: 100%;
+  text-decoration: none;
+  margin: -10% 0% 0% 0%;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 30%;
+  border: 3px solid rgba(4, 4, 5, 1);
+
+  list-style: none;
+  z-index: 0;
+
+}
+.Info-class fieldset{
+  text-decoration: none;
+  font-family: kikia;
+  border: none;
+  width: 100%;
+}
+.Info-class .profile
+{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.Info-class .profile input
+{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border-top: transparent;
+    border-left-color: rgba(6, 6, 7, 0.5);
+    margin: 0% 0% 10% -30%;
+
+
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    transition: 0.5s;
+    z-index: 10;
+
+}
+.Info-class .profile .save
+{
+  background-color:  rgba(32, 90, 216, 0.5);
+  color: white;
+  border-color: transparent;
+}
+.Info-class .profile span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.Info-class .profile input:valid ~ span,
+.Info-class .profile input:focus ~ span
+{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+  .listfriend-{
+    position:relative;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+     
+      scroll-behavior: smooth;
+      overflow-y: auto;
+      overflow-x: hidden;
+      list-style: none;
+      z-index: 0;
+      
+  
+
+    
+  }
+  .Info-class .com1-
+  {
+    width:10%;
+    height: 70%;
+    margin: 5% 5% 5% 5%;
+    display: flex;
+    place-items: center;
+    rotate: 45deg;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px black, 0 0 10px black;
+    filter: drop-shadow(0 0 10px var(--color0)) saturate(1);
+  }
+
+  .Info-class .com1- .th1- {
+    inline-size: 100%;
+    block-size: 100%;
+    overflow: hidden;
+  }
+  .Info-class .com1- .th1- img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    rotate: -45deg;
+    scale: 1.2;
+  }
+
+  .Userfriend-{
+    position:relative;
+    display:flex;
+    height : 2%;
+    border-radius: 10px;
+    margin: 2.5% 10% 0% 0%;
+    
+    transition: 0.5s;
+    overflow: hidden;
+    background:rgba(4, 12, 29, 0.301);
+
+  }
+ 
+  .Userfriend- .FrContent-
+  {
+    width: 50%;
+    font-family: 'Kikia';
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .Userfriend- .FrContent- p
+  {
+    font-size: 15px;
+  }
+  .Userfriend- .FrContent- img{
+    background-color: #050505;
+    margin-top: 10%;
+    margin-left: 12%;
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  
+  .listfriend- .users li{
+    height: 10%;
+    width: 100%;
+
+  }
+  .listfriend- .users{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .listfriend- .users .owner-dots{
+
+    display: flex;
+    flex-direction: row;
+    width:10%;
+    color: white;
+    z-index: 100;
+
+  }
+
+  
+
+
+
+  .addUserToRoom
+{
+    width:100%;
+    height:10%;
+    text-align: center;
+    align-items: center center;
+    justify-content: center center;
+    margin: 2% 0 10% 0;
+}
+.addUserToRoom button{
+  font-size: 5vw;
+}
+.addUserToRoom .searchedUsers
+{
+    position: relative;
+    width: 75%;
+    margin: 0 0 0 10%;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(164, 167, 180,0.5);
+    z-index: 10;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#eeeaea, #f7ecec), linear-gradient(120deg, rgb(252, 252, 249) 0%, rgb(9, 10, 10) 50%, rgb(87, 59, 8) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    transition: background-position 0.8s ease-out;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+.addUserToRoom .searchedUsers ul
+{
+    position: relative;
+    background-color: #050505;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+.addUserToRoom .searchedUsers li
+{
+    color: black;
+    font-family: kikia;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 0 1% 0 ;
+    list-style: none;
+    height: 60px;
+    border-radius:20px;
+}
+.addUserToRoom .searchedUsers li:hover{
+    background-color: rgba(164, 167, 180,0.8);
+}
+
+.addUserToRoom .searchedUsers li p
+{
+    color: black;
+    filter: drop-shadow(2px 2px 2px #0a0b0e) saturate(1);
+
+}
+.addUserToRoom .searchedUsers li img
+{
+    text-align: left;
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* .addUserToRoom input{
+    position:relative;
+    margin: 4% 0 0 0;
+    height:70%;
+    width: 85%;
+
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: rgb(241, 239, 239);
+    padding-left: 35px;
+    font-size: 18px;
+    color:white;
+
+
+} */
+
+.addUserToRoom button{
+  background-color: transparent;
+  border: none;
+}
+.addUserToRoom input {
+    position:relative;
+    margin: 3% 2% 0 0;
+    height:30%;
+    width: 80%;
+    
+
+  }
+
+
+  .addUserToRoom input {
+    color: #050505;
+    font-size: 1rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#eeeaea, #f7ecec), linear-gradient(120deg, rgb(252, 252, 249) 0%, rgb(10, 13, 15) 50%, rgb(87, 59, 8) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    transition: background-position 0.8s ease-out;
+  }
+  .addUserToRoom input:hover {
+    background-position: 100% 0;
+  }
+  .addUserToRoom input:focus {
+    outline: 2px dashed #532507;
+    outline-offset: 0.5em;
+  }
+
+  .emoji-button{
+    border-radius: 50%;
+  }
+
+
+  .plus_info {
+  position: absolute;
+  color: rgb(223, 217, 206);
+  width:  100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  margin: 0 0 0 0;
+  flex-direction: column;
+
+
+
+}
+
+
+
+.threedot-element{
+    width: 20%;
+    margin: 0 0 0 calc(-100% + 2.5vw);
+
+
+}
+
+.threedot-element li{
+  width: 2.5vw;
+  height: 2.5vw;
+
+
+}
